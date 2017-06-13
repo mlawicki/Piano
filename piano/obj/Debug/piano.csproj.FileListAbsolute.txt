@@ -1,0 +1,9 @@
+c:\csharp\piano\piano\bin\Debug\piano.exe.config
+c:\csharp\piano\piano\obj\Debug\piano.csprojResolveAssemblyReference.cache
+c:\csharp\piano\piano\obj\Debug\piano.Properties.Resources.resources
+c:\csharp\piano\piano\obj\Debug\piano.csproj.GenerateResource.Cache
+c:\csharp\piano\piano\bin\Debug\piano.exe
+c:\csharp\piano\piano\bin\Debug\piano.pdb
+c:\csharp\piano\piano\obj\Debug\piano.exe
+c:\csharp\piano\piano\obj\Debug\piano.pdb
+C:\csharp\piano\piano\obj\Debug\piano.Piano.resources
