@@ -60,6 +60,7 @@
             this.tonacja3 = new System.Windows.Forms.RadioButton();
             this.tonacja4 = new System.Windows.Forms.RadioButton();
             this.tonacja5 = new System.Windows.Forms.RadioButton();
+            this.info = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -457,12 +458,24 @@
             this.tonacja5.UseVisualStyleBackColor = true;
             this.tonacja5.CheckedChanged += new System.EventHandler(this.tonacja5_CheckedChanged);
             // 
+            // info
+            // 
+            this.info.BackColor = System.Drawing.SystemColors.Control;
+            this.info.Location = new System.Drawing.Point(565, 145);
+            this.info.Name = "info";
+            this.info.Size = new System.Drawing.Size(18, 21);
+            this.info.TabIndex = 28;
+            this.info.Text = "i";
+            this.info.UseVisualStyleBackColor = false;
+            this.info.Click += new System.EventHandler(this.info_Click);
+            // 
             // Piano
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(595, 169);
+            this.Controls.Add(this.info);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
@@ -487,7 +500,7 @@
             this.Controls.Add(this.button1);
             this.MaximizeBox = false;
             this.Name = "Piano";
-            this.Text = "Form1";
+            this.Text = "Piano";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -532,6 +545,7 @@
         private System.Windows.Forms.RadioButton tonacja3;
         private System.Windows.Forms.RadioButton tonacja2;
         private System.Windows.Forms.RadioButton tonacja1;
+        private System.Windows.Forms.Button info;
     }
 }
 

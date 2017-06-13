@@ -30,6 +30,12 @@ namespace piano
         {
             dlugosc2.Checked = true;
             tonacja3.Checked = true;
+
+            Console.Beep(1000, 100);
+            Console.Beep(1500, 100);
+            Console.Beep(2000, 100);
+            Console.Beep(1500, 200);
+            Console.Beep(1000, 800);
         }
 
 
@@ -169,6 +175,11 @@ namespace piano
         private void tonacja5_CheckedChanged(object sender, EventArgs e)
         {
             ton = 1500;
+        }
+
+        private void info_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.MessageBox.Show("by mlawicki \n github.com/mlawicki");
         }
     }
 }
