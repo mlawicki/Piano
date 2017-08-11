@@ -16,12 +16,15 @@ namespace piano
         int ton = 1020;
         int dlugosc = 100;
 
+
+
         
 
 
         public Piano()
         {
             InitializeComponent();
+
         }
 
 
@@ -31,10 +34,12 @@ namespace piano
             dlugosc2.Checked = true;
             tonacja3.Checked = true;
 
-            Console.Beep(1000, 100);
+            Random rnd = new Random();   //aby bylo ciekawiej - generowanie melodyjki na wstępie z przypadkowym dźwiękiem
+            int przypadkowy = rnd.Next(500, 2500);
+            Console.Beep(przypadkowy, 100);
             Console.Beep(1500, 100);
             Console.Beep(2000, 100);
-            Console.Beep(1500, 200);
+            Console.Beep((przypadkowy+300), 200);
             Console.Beep(1000, 800);
         }
 
@@ -180,6 +185,19 @@ namespace piano
         private void info_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.MessageBox.Show("by mlawicki \n github.com/mlawicki");
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            ton = 1020;
+            dlugosc = 100;
+        }
+
+        public void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+         // Dodane zostanie zmniejszenie zmiennych ton oraz dlugosc do 0
+         // Aby móc przy zaznaczonej opcji obniżać 
         }
     }
 }

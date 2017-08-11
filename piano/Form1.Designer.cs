@@ -54,12 +54,12 @@
             this.dlugosc3 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tonacja1 = new System.Windows.Forms.RadioButton();
-            this.tonacja2 = new System.Windows.Forms.RadioButton();
-            this.tonacja3 = new System.Windows.Forms.RadioButton();
-            this.tonacja4 = new System.Windows.Forms.RadioButton();
             this.tonacja5 = new System.Windows.Forms.RadioButton();
+            this.tonacja4 = new System.Windows.Forms.RadioButton();
+            this.tonacja3 = new System.Windows.Forms.RadioButton();
+            this.tonacja2 = new System.Windows.Forms.RadioButton();
+            this.tonacja1 = new System.Windows.Forms.RadioButton();
+            this.label3 = new System.Windows.Forms.Label();
             this.info = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -290,6 +290,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
             this.radioButton1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.radioButton1.Location = new System.Drawing.Point(470, 37);
             this.radioButton1.Name = "radioButton1";
@@ -298,6 +299,7 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "ConsoleBeep";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -307,9 +309,9 @@
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(86, 17);
             this.radioButton2.TabIndex = 20;
-            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Wave (soon)";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // label1
             // 
@@ -391,50 +393,16 @@
             this.panel1.Size = new System.Drawing.Size(255, 24);
             this.panel1.TabIndex = 27;
             // 
-            // label3
+            // tonacja5
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.Info;
-            this.label3.Location = new System.Drawing.Point(7, 6);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 13);
-            this.label3.TabIndex = 23;
-            this.label3.Text = "Tonacja:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // tonacja1
-            // 
-            this.tonacja1.AutoSize = true;
-            this.tonacja1.Location = new System.Drawing.Point(75, 6);
-            this.tonacja1.Name = "tonacja1";
-            this.tonacja1.Size = new System.Drawing.Size(14, 13);
-            this.tonacja1.TabIndex = 24;
-            this.tonacja1.TabStop = true;
-            this.tonacja1.UseVisualStyleBackColor = true;
-            this.tonacja1.CheckedChanged += new System.EventHandler(this.tonacja1_CheckedChanged);
-            // 
-            // tonacja2
-            // 
-            this.tonacja2.AutoSize = true;
-            this.tonacja2.Location = new System.Drawing.Point(111, 6);
-            this.tonacja2.Name = "tonacja2";
-            this.tonacja2.Size = new System.Drawing.Size(14, 13);
-            this.tonacja2.TabIndex = 25;
-            this.tonacja2.TabStop = true;
-            this.tonacja2.UseVisualStyleBackColor = true;
-            this.tonacja2.CheckedChanged += new System.EventHandler(this.tonacja2_CheckedChanged);
-            // 
-            // tonacja3
-            // 
-            this.tonacja3.AutoSize = true;
-            this.tonacja3.Location = new System.Drawing.Point(147, 6);
-            this.tonacja3.Name = "tonacja3";
-            this.tonacja3.Size = new System.Drawing.Size(14, 13);
-            this.tonacja3.TabIndex = 26;
-            this.tonacja3.TabStop = true;
-            this.tonacja3.UseVisualStyleBackColor = true;
-            this.tonacja3.CheckedChanged += new System.EventHandler(this.tonacja3_CheckedChanged);
+            this.tonacja5.AutoSize = true;
+            this.tonacja5.Location = new System.Drawing.Point(223, 6);
+            this.tonacja5.Name = "tonacja5";
+            this.tonacja5.Size = new System.Drawing.Size(14, 13);
+            this.tonacja5.TabIndex = 28;
+            this.tonacja5.TabStop = true;
+            this.tonacja5.UseVisualStyleBackColor = true;
+            this.tonacja5.CheckedChanged += new System.EventHandler(this.tonacja5_CheckedChanged);
             // 
             // tonacja4
             // 
@@ -447,16 +415,50 @@
             this.tonacja4.UseVisualStyleBackColor = true;
             this.tonacja4.CheckedChanged += new System.EventHandler(this.tonacja4_CheckedChanged);
             // 
-            // tonacja5
+            // tonacja3
             // 
-            this.tonacja5.AutoSize = true;
-            this.tonacja5.Location = new System.Drawing.Point(223, 6);
-            this.tonacja5.Name = "tonacja5";
-            this.tonacja5.Size = new System.Drawing.Size(14, 13);
-            this.tonacja5.TabIndex = 28;
-            this.tonacja5.TabStop = true;
-            this.tonacja5.UseVisualStyleBackColor = true;
-            this.tonacja5.CheckedChanged += new System.EventHandler(this.tonacja5_CheckedChanged);
+            this.tonacja3.AutoSize = true;
+            this.tonacja3.Location = new System.Drawing.Point(147, 6);
+            this.tonacja3.Name = "tonacja3";
+            this.tonacja3.Size = new System.Drawing.Size(14, 13);
+            this.tonacja3.TabIndex = 26;
+            this.tonacja3.TabStop = true;
+            this.tonacja3.UseVisualStyleBackColor = true;
+            this.tonacja3.CheckedChanged += new System.EventHandler(this.tonacja3_CheckedChanged);
+            // 
+            // tonacja2
+            // 
+            this.tonacja2.AutoSize = true;
+            this.tonacja2.Location = new System.Drawing.Point(111, 6);
+            this.tonacja2.Name = "tonacja2";
+            this.tonacja2.Size = new System.Drawing.Size(14, 13);
+            this.tonacja2.TabIndex = 25;
+            this.tonacja2.TabStop = true;
+            this.tonacja2.UseVisualStyleBackColor = true;
+            this.tonacja2.CheckedChanged += new System.EventHandler(this.tonacja2_CheckedChanged);
+            // 
+            // tonacja1
+            // 
+            this.tonacja1.AutoSize = true;
+            this.tonacja1.Location = new System.Drawing.Point(75, 6);
+            this.tonacja1.Name = "tonacja1";
+            this.tonacja1.Size = new System.Drawing.Size(14, 13);
+            this.tonacja1.TabIndex = 24;
+            this.tonacja1.TabStop = true;
+            this.tonacja1.UseVisualStyleBackColor = true;
+            this.tonacja1.CheckedChanged += new System.EventHandler(this.tonacja1_CheckedChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Info;
+            this.label3.Location = new System.Drawing.Point(7, 6);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(57, 13);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "Tonacja:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // info
             // 
