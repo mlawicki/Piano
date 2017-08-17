@@ -1,0 +1,3 @@
+wersja 0.9:
+- zaimplementowany instrument Wave
+- zaimplementowany przelacznik miedzy instrumentem ConsoleBeep oraz Wave

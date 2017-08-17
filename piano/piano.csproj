@@ -64,6 +64,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -77,6 +78,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dzwieki\A.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dzwieki\C.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dzwieki\C2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dzwieki\D.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dzwieki\E.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dzwieki\F.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dzwieki\G.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dzwieki\H.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dzwieki\wav\A.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dzwieki\wav\C.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dzwieki\wav\C2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dzwieki\wav\D.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dzwieki\wav\E.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dzwieki\wav\F.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dzwieki\wav\G.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dzwieki\wav\H.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

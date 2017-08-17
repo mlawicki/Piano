@@ -47,6 +47,7 @@ namespace piano
         private void button1_Click(object sender, EventArgs e)
         {
 
+
         }
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
@@ -67,17 +68,52 @@ namespace piano
 
         private void button1_MouseClick(object sender, MouseEventArgs e)
         {
-            Console.Beep(ton, dlugosc);
+
+            switch (radioButton2.Checked)
+            {
+                case true:
+                    {
+                        System.IO.Stream str = Properties.Resources.C;
+                        System.Media.SoundPlayer snd = new System.Media.SoundPlayer(str);
+                        snd.Play();
+                        
+                    }
+                    break;
+
+                case false:
+                    {
+                        Console.Beep(ton, dlugosc);                        
+                        break;
+                    }
+            }
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
+
             Console.Beep(ton + 400, dlugosc);
         }
 
         private void button2_Click(object sender, EventArgs e)
+
         {
-            Console.Beep(ton + 600, dlugosc);
+            switch (radioButton2.Checked)
+            {
+                case true:
+                    {
+                        System.IO.Stream str = Properties.Resources.D;
+                        System.Media.SoundPlayer snd = new System.Media.SoundPlayer(str);
+                        snd.Play();
+
+                    }
+                    break;
+
+                case false:
+                    {
+                        Console.Beep(ton + 600, dlugosc);
+                        break;
+                    }
+            }
         }
 
 
@@ -89,12 +125,44 @@ namespace piano
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Console.Beep(ton + 1200, dlugosc);
+            switch (radioButton2.Checked)
+            {
+                case true:
+                    {
+                        System.IO.Stream str = Properties.Resources.E;
+                        System.Media.SoundPlayer snd = new System.Media.SoundPlayer(str);
+                        snd.Play();
+
+                    }
+                    break;
+
+                case false:
+                    {
+                        Console.Beep(ton + 1200, dlugosc);
+                        break;
+                    }
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Console.Beep(ton + 1400, dlugosc);
+            switch (radioButton2.Checked)
+            {
+                case true:
+                    {
+                        System.IO.Stream str = Properties.Resources.F;
+                        System.Media.SoundPlayer snd = new System.Media.SoundPlayer(str);
+                        snd.Play();
+
+                    }
+                    break;
+
+                case false:
+                    {
+                        Console.Beep(ton + 1400, dlugosc);
+                        break;
+                    }
+            }
         }
 
         private void button15_Click(object sender, EventArgs e)
@@ -104,7 +172,23 @@ namespace piano
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Console.Beep(ton + 1800, dlugosc);
+            switch (radioButton2.Checked)
+            {
+                case true:
+                    {
+                        System.IO.Stream str = Properties.Resources.G;
+                        System.Media.SoundPlayer snd = new System.Media.SoundPlayer(str);
+                        snd.Play();
+
+                    }
+                    break;
+
+                case false:
+                    {
+                        Console.Beep(ton + 1800, dlugosc);
+                        break;
+                    }
+            }
         }
 
         private void button16_Click(object sender, EventArgs e)
@@ -114,7 +198,24 @@ namespace piano
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Console.Beep(ton + 2200, dlugosc);
+            switch (radioButton2.Checked)
+            {
+                case true:
+                    {
+                        System.IO.Stream str = Properties.Resources.A;
+                        System.Media.SoundPlayer snd = new System.Media.SoundPlayer(str);
+                        snd.Play();
+
+                    }
+                    break;
+
+                case false:
+                    {
+                        Console.Beep(ton + 2200, dlugosc);
+                        break;
+                    }
+            }
+                
         }
 
         private void button17_Click(object sender, EventArgs e)
@@ -124,12 +225,44 @@ namespace piano
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Console.Beep(ton + 2600, dlugosc);
+            switch (radioButton2.Checked)
+            {
+                case true:
+                    {
+                        System.IO.Stream str = Properties.Resources.H;
+                        System.Media.SoundPlayer snd = new System.Media.SoundPlayer(str);
+                        snd.Play();
+
+                    }
+                    break;
+
+                case false:
+                    {
+                        Console.Beep(ton + 2600, dlugosc);
+                        break;
+                    }
+            }
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            Console.Beep(ton + 2800, dlugosc);
+            switch (radioButton2.Checked)
+            {
+                case true:
+                    {
+                        System.IO.Stream str = Properties.Resources.C2;
+                        System.Media.SoundPlayer snd = new System.Media.SoundPlayer(str);
+                        snd.Play();
+
+                    }
+                    break;
+
+                case false:
+                    {
+                        Console.Beep(ton + 2800, dlugosc);
+                        break;
+                    }
+            }
         }
 
         private void button18_Click(object sender, EventArgs e)
@@ -184,20 +317,61 @@ namespace piano
 
         private void info_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.MessageBox.Show("by mlawicki \n github.com/mlawicki");
+            System.Windows.Forms.MessageBox.Show("Piano v 0.9 \n by mlawicki \n github.com/mlawicki");
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             ton = 1020;
             dlugosc = 100;
+
+            tonacja1.Enabled = true;
+            tonacja2.Enabled = true;
+            tonacja3.Enabled = true;
+            tonacja4.Enabled = true;
+            tonacja5.Enabled = true;
+            dlugosc1.Enabled = true;
+            dlugosc2.Enabled = true;
+            dlugosc3.Enabled = true;
+            button13.Enabled = true;    //w związku z faktem braku nagranych dźwięków klawiszy czarnych
+            button14.Enabled = true;    //oraz dźwięków powyżej gamy podstawowej, będą one czasowo nieaktywne
+            button15.Enabled = true;
+            button16.Enabled = true;
+            button17.Enabled = true;
+            button18.Enabled = true;
+            button9.Enabled = true;
+            button9.BackColor = System.Drawing.Color.White;
+            button19.Enabled = true;
+            button10.Enabled = true;
+            button10.BackColor = System.Drawing.Color.White;
+
+
         }
 
         public void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
+            tonacja1.Enabled = false;
+            tonacja2.Enabled = false;
+            tonacja3.Enabled = false;
+            tonacja4.Enabled = false;
+            tonacja5.Enabled = false;
+            dlugosc1.Enabled = false;
+            dlugosc2.Enabled = false;
+            dlugosc3.Enabled = false;
+            button13.Enabled = false; //w związku z faktem braku nagranych dźwięków klawiszy czarnych
+            button14.Enabled = false; //oraz dźwięków powyżej gamy podstawowej, będą one czasowo nieaktywne
+            button15.Enabled = false;
+            button16.Enabled = false;
+            button17.Enabled = false;
+            button18.Enabled = false;
+            button9.Enabled = false;
+            button9.BackColor = System.Drawing.Color.Gray;
+            button19.Enabled = false;
+            button10.Enabled = false;
+            button10.BackColor = System.Drawing.Color.Gray;
 
-         // Dodane zostanie zmniejszenie zmiennych ton oraz dlugosc do 0
-         // Aby móc przy zaznaczonej opcji obniżać 
+
+
         }
     }
 }

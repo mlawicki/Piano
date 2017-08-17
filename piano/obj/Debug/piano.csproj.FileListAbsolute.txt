@@ -7,3 +7,12 @@ c:\csharp\piano\piano\bin\Debug\piano.pdb
 c:\csharp\piano\piano\obj\Debug\piano.exe
 c:\csharp\piano\piano\obj\Debug\piano.pdb
 C:\csharp\piano\piano\obj\Debug\piano.Piano.resources
+C:\Users\DOBRI\Desktop\programy csharp\piano\piano\bin\Debug\piano.exe.config
+C:\Users\DOBRI\Desktop\programy csharp\piano\piano\obj\Debug\piano.exe
+C:\Users\DOBRI\Desktop\programy csharp\piano\piano\obj\Debug\piano.pdb
+C:\Users\DOBRI\Desktop\programy csharp\piano\piano\bin\Debug\piano.exe
+C:\Users\DOBRI\Desktop\programy csharp\piano\piano\bin\Debug\piano.pdb
+C:\Users\DOBRI\Desktop\programy csharp\piano\piano\obj\Debug\piano.csprojResolveAssemblyReference.cache
+C:\Users\DOBRI\Desktop\programy csharp\piano\piano\obj\Debug\piano.Piano.resources
+C:\Users\DOBRI\Desktop\programy csharp\piano\piano\obj\Debug\piano.Properties.Resources.resources
+C:\Users\DOBRI\Desktop\programy csharp\piano\piano\obj\Debug\piano.csproj.GenerateResource.Cache
